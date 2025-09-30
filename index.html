@@ -3,135 +3,215 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ari Baron - Resume</title>
+  <title>Ari Baron— Resume</title>
+
+  <!-- Google Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #0077b6, #00b894);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      animation: fadeIn 1.2s ease-in;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     header {
-      background: #222;
-      color: #fff;
-      padding: 2rem 1rem;
       text-align: center;
+      margin-top: 60px;
+      animation: fadeIn 1.2s ease-out;
     }
+
     header h1 {
+      font-size: 2.8em;
       margin: 0;
-      font-size: 2.5rem;
+      letter-spacing: 2px;
     }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.3rem;
+
+    header h3 {
+      font-weight: 400;
+      margin-top: 10px;
+      color: #e0f7fa;
     }
+
+    .profile-pic {
+      margin-top: 30px;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ffffffaa;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+      animation: fadeIn 1.5s ease-out;
+    }
+
     main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      width: 85%;
+      max-width: 850px;
+      border-radius: 16px;
+      padding: 40px;
+      margin: 40px auto;
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.25);
+      animation: fadeIn 1.5s ease-in;
     }
+
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 35px;
     }
+
     h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.3rem;
-      margin-bottom: 1rem;
-      color: #444;
+      border-bottom: 2px solid #aef1d1;
+      padding-bottom: 6px;
+      margin-bottom: 15px;
+      color: #e3faf5;
     }
-    .job, .edu {
-      margin-bottom: 1.2rem;
-    }
-    .job h3, .edu h3 {
-      margin: 0;
-      font-size: 1.2rem;
-    }
-    .job span, .edu span {
-      display: block;
-      font-size: 0.9rem;
-      color: #666;
-    }
+
     ul {
-      margin: 0.5rem 0 0 1.5rem;
+      list-style-type: none;
+      padding: 0;
     }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #222;
-      color: #fff;
-      margin-top: 2rem;
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.5;
     }
+
     a {
-      color: #007acc;
+      color: #d4f9ff;
       text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
     }
+
     a:hover {
       text-decoration: underline;
+      color: #b2f5ea;
+    }
+
+    footer {
+      margin-bottom: 40px;
+      font-size: 0.9em;
+      color: #cceff4;
+      text-align: center;
+    }
+
+    .contact-links a {
+      margin: 0 10px;
+      display: inline-block;
+      font-size: 1.3em;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-links a:hover {
+      transform: scale(1.15);
+    }
+
+    .resume-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #e3faf5;
+      color: #00796b;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .resume-btn:hover {
+      background-color: #b2f5ea;
+      transform: scale(1.05);
+    }
+
+    .quote {
+      font-style: italic;
+      color: #d8f9f2;
+      text-align: center;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Ari Baron</h1>
-    <p>📍 Bellevue Chopin, Dominica | 📧 aeb416@miami.edu | 🔗 <a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
+    <h3>Marine Health & IT Enthusiast | Student Leader | Innovator</h3>
+    <img src="https://mail.google.com/mail/u/1?ui=2&ik=ad1367d313&attid=0.1&permmsgid=msg-a:r1123344820236334596&th=1999cc540c409106&view=fimg&fur=ip&permmsgid=msg-a:r1123344820236334596&sz=s0-l75-ft&attbid=ANGjdJ85WK1FnPKkHRVFTDCb_-30SxZmjL8zT6dZcMLZ5Ri_GPmiRpCB1cUUIm6_V68AFKl1ilotIcSVSWihgC7b7e83oWxTL4c3K8YiwO_yKwkGkjt9X2RFpO72sLo&disp=emb&realattid=7D812A29-2A5C-4A68-B2C2-CD11DC565C61&zw" alt="Profile Photo" class="profile-pic">
   </header>
 
   <main>
     <section>
-      <h2>Profile</h2>
-      <p>I am a Marine Affairs major at the University of Miami with a strong passion for sustainability, environmental health, and the intersection between people and the ocean. Growing up in the Caribbean, I have seen firsthand the impact of climate change and environmental degradation on coastal communities, which drives my commitment to finding innovative, data-driven solutions for marine conservation and sustainable development. I bring experience in customer service, inventory management, and leadership, including my role as vice president of my school’s Black Student Union, where I learned to build connections and advocate for meaningful change. My career goal is to contribute to global efforts in marine policy, sustainable tourism, and public health, making a positive impact on both communities and ecosystems.</p>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-      <div class="job">
-        <h3>Inventory Clerk – HHV Whitchurch</h3>
-        <span>May 2025 – August 2025</span>
-        <ul>
-          <li>Key achievement or responsibility #1</li>
-          <li>Key achievement or responsibility #2</li>
-          <li>Key achievement or responsibility #3</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>Receptionist – Depex Color Lab </h3>
-        <span>June 2023 – August 2023</span>
-        <ul>
-          <li>Customer Service Skills </li>
-          <li>Planning and Organisational Skills</li>
-        </ul>
-      </div>
+      <h2>About Me</h2>
+      <p>
+        I am a student at University of Miami majoring in Marine Affairs. I am from a small island in the Caribbean called Dominica . This fuels my deep interest in marine health,
+        sustainable development, and technology. My goal is to use innovation and data driven solutions to create
+        a healthier, more sustainable world.
+      </p>
+      <p class="quote">"Driven to connect sustainability with innovation and data."</p>
     </section>
 
     <section>
       <h2>Education</h2>
-      <div class="edu">
-        <h3>High School Diploma – Convent High School</h3>
-        <span>Graduation Year 2023</span>
-      </div>
-      <div class="edu">
-        <h3>High School Diploma – Salem Academy</h3>
-        <span>Graduation Year 2025</span>
-      </div>
-      <div class="edu">
-        <h3>B.A. in Marine Affairs – University of Miami</h3>
-        <span>Graduation Year 2029</span>
+      <ul>
+        <li><strong>Convent High School</strong> — High School Diploma (Graduation: 2023)</li>
+        <li><strong>Salem Academy</strong> — High School Diploma (Graduation: 2025)</li>
+        <li><strong>University of Miami</strong> — B.A. in Marine Affairs (Expected Graduation: 2029)</li>
+
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Vice President, Black Student Union</strong> — Organized events promoting culture and inclusion.</li>
+        <li><strong>Researcher, Salem College</strong> — Studied the economic importance of rehabilitating the Belize Barrier Reef.</li>
+        <li><strong>Receptionist, Depex Color Lab</strong> — Managed front desk operations, assisted customers and staff, and maintained organized communication and scheduling to ensure smooth daily operations.</li>
+        <li><strong>Inventory Clerk, HHV Whitchurch</strong> — Improved data tracking and system accuracy as an Inventory Clerk for this supermarket chain</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Sustainable Tourism Website for Dominica</strong> — Designed a site promoting eco-friendly tourism and community growth.</li>
+        <li><strong>Assessing and Addressing Marine Pollution in the Caribbean - Research Paper</strong> — Analyzed the environmental and economic importance of reef restoration in Belize, emphasizing how sustainability supports long-term economic growth and ecosystem health</li>
+      </ul>
     </section>
 
     <section>
       <h2>Skills</h2>
       <ul>
-        <li>Microsoft Office Efficiency</li>
-        <li>Customer Service and Communication</li>
-        <li>Skill Three</li>
-        <li>Skill Four</li>
+        <li>Data Analysis (Microsoft Office)</li>
+        <li>Web Development (Dev C++)</li>
+        <li>Public Speaking & Leadership</li>
+        <li>Environmental Research & Writing</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="contact-links">
+        <a href="mailto:aeb416@miami.edu" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/aeb416" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+      <a href="Ari_Resume.pdf" class="resume-btn" download>Download Résumé (PDF)</a>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Ari Baron | Built with HTML & CSS</p>
+    &copy; 2025 Ari Baron. All rights reserved.
   </footer>
 </body>
 </html>
